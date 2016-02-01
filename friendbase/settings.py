@@ -24,6 +24,10 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = (
+    '/home/dchiasson/friendbase/mytemplates',
+)
+
 ALLOWED_HOSTS = []
 
 
