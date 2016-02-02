@@ -1,0 +1,2 @@
+
+ALTER TABLE addressbook_person ADD COLUMN emal DEFAULT ''
