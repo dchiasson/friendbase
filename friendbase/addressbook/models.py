@@ -23,6 +23,14 @@ class Person(models.Model):
     def __unicode__(self):
         return "{} {}".format(self.first_name, self.last_name)
 
+class Address(models.Model):
+    street_line_1 = models.CharField(max_length=1024, blank=True, null=True)
+    street_line_2 = models.CharField(max_length=1024, blank=True, null=True)
+    city = models.CharField(max_length=1024, blank=True, null=True)
+    state = models.CharField(max_length=1024, blank=True, null=True)
+    zip_code = models.CharField(max_length=1024, blank=True, null=True)
+    country = models.CharField(max_length=200, blank=True, null=True)
+
 class Meeting(models.Model):
     person = models.ForeignKey(Family)
     date_time = models.DateTimeField("Meeting Date/Time")
